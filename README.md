@@ -1,59 +1,36 @@
-# UnitrackFrontend
+# UniTrack - Gestión Académica (Fase 1) 🎓
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.9.
+Este proyecto es una aplicación **Full-Stack** diseñada para la gestión de estudiantes y sus historiales académicos, desarrollada como parte del tercer semestre de la **Licenciatura en Administración de Sistemas Informáticos** en la **Universidad Regional de Guatemala**.
 
-## Development server
+## 🚀 Funcionalidades Principales
 
-To start a local development server, run:
+### 1. Gestión de Estudiantes (Lista Simple Enlazada)
+* **Registro**: Formulario para dar de alta estudiantes con Carnet, Nombres, Apellidos y Correo.
+* **Visualización**: Representación gráfica de los nodos con punteros simples (`→`) apuntando al siguiente elemento y finalizando en `NULL`.
+* **Inversión**: Función para invertir el orden de los punteros de la lista.
 
-```bash
-ng serve
-```
+### 2. Historial Académico (Lista Doble Enlazada)
+* **Interactividad**: Al seleccionar un estudiante, se despliega su historial de cursos.
+* **Estructura Doble**: Visualización de nodos con punteros anterior y siguiente (`↔`), demostrando el manejo de listas doblemente enlazadas.
+* **Ordenamiento**: Implementación de algoritmo de ordenamiento (QuickSort/Bubble) para organizar las notas de mayor a menor.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## 🛠️ Tecnologías Utilizadas
 
-## Code scaffolding
+* **Frontend**: Angular 17+ (Standalone Components).
+* **Lenguaje**: TypeScript.
+* **Estilos**: CSS3 con diseño responsivo.
+* **Backend**: Node.js / Express (Repositorio independiente).
+* **Control de Versiones**: Git & GitHub.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## 📋 Estructura del Proyecto
 
-```bash
-ng generate component component-name
-```
+* `src/app/components/gestion-academica`: Lógica y diseño de la interfaz principal.
+* `src/app/services/estudiante.service.ts`: Capa de servicio para la comunicación con la API.
+* Visualización Gráfica:
+  * **Nodos Azules**: Representan la Lista Simple (Estudiantes).
+  * **Nodos Verdes**: Representan la Lista Doble (Cursos/Notas).
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## 👤 Autor
+* **Nombre**: Jose Milian
+* **Carnet**: 2527304
+* **Universidad**: Universidad Regional de Guatemala
